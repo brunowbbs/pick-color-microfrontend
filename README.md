@@ -9,7 +9,7 @@
 </p>
 
 <h1 align="center">
-  <img alt="Home" src="./screen-captuer.gif" width="750" />
+  <img alt="Home" src="./screen-capture.gif" width="750" />
 </h1>
 
 ## :page_with_curl: Sobre
@@ -28,18 +28,14 @@ Para a construção da aplicação, foram utilizadas as seguintes tecnologias:
 
 - Ter [**Git**](https://git-scm.com/) para clonar o projeto.
 - Ter [**Node.js**](https://nodejs.org/en/) instalado.
-- Um dispositivo ou emulador iOS ou Android
 
 ## :rocket: Começando
 
 ```bash
   # Clonar o projeto:
-  $ https://github.com/brunowbbs/marvalApp.git
+  $ https://github.com/brunowbbs/pick-color-microfrontend
 
-  # Entrar no diretório:
-  $ cd marvelApp
-
-  # Instalar as dependências:
+  # Entrar nos diretórios e instalar as dependencias:
   $ yarn
 ```
 
@@ -47,8 +43,7 @@ Para a construção da aplicação, foram utilizadas as seguintes tecnologias:
 
 ```bash
   # Iniciar a aplicação:
-  $ yarn ios
-  $ yarn android
+  $ cd host && yarn start
 ```
 
 Feito por Wesley Bruno 👋🏻 [Get in touch!](https://github.com/brunowbbs)
