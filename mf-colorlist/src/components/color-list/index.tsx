@@ -3,9 +3,13 @@ import Swal from "sweetalert2";
 
 type ColorListProps = {
   colorList: string[];
+  handleClickClearColors: () => void;
 };
 
-const ColorList = ({ colorList = [] }: ColorListProps) => {
+const ColorList = ({
+  colorList = [],
+  handleClickClearColors,
+}: ColorListProps) => {
   const handleCopyColor = (color: string) => {
     navigator.clipboard.writeText(color);
     Swal.fire({
@@ -44,6 +48,15 @@ const ColorList = ({ colorList = [] }: ColorListProps) => {
           {color}
         </button>
       ))}
+      {colorList.length && (
+        <button
+          // type="button"
+          className="btn btn-danger mt-4"
+          onClick={handleClickClearColors}
+        >
+          Limpar
+        </button>
+      )}
     </div>
   );
 };

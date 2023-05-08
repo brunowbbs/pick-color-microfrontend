@@ -7,8 +7,13 @@ import ColorList from "colorList/ColorList";
 import "./index.css";
 
 const App = () => {
-  const { color, colorList, handleSubmitColor, handleChangeColor } =
-    useColors();
+  const {
+    color,
+    colorList,
+    handleSubmitColor,
+    handleChangeColor,
+    handleClickClearColors,
+  } = useColors();
 
   return (
     <>
@@ -16,7 +21,10 @@ const App = () => {
       <div className="container mt-4">
         <div className="row">
           <div className="col-12 col-md-4">
-            <ColorList colorList={colorList} />
+            <ColorList
+              colorList={colorList}
+              handleClickClearColors={handleClickClearColors}
+            />
           </div>
           <div className="col-12 col-md-8">
             <ColorPicker
